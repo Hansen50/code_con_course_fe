@@ -1,4 +1,5 @@
 import 'package:code_con_course_fe/presentation/constant.dart';
+import 'package:code_con_course_fe/presentation/widgets/brief_description_section.dart';
 import 'package:code_con_course_fe/presentation/widgets/code_con_app_bar.dart';
 import 'package:code_con_course_fe/presentation/widgets/home_page_header.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +24,7 @@ class HomePage extends StatelessWidget {
               HomePageHeader(),
               //Text('HomePageHeader'),
               sizedBoxHeight60,
-              Text('BriefDescriptionSection'),
+              BriefDescriptionSection(),
               Text('SpeakerSection'),
               Text('AgendaSection'),
               sizedBoxHeight60,
