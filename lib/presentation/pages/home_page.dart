@@ -1,7 +1,10 @@
+import 'package:code_con_course_fe/domain/entities/speaker.dart';
 import 'package:code_con_course_fe/presentation/constant.dart';
 import 'package:code_con_course_fe/presentation/widgets/brief_description_section.dart';
 import 'package:code_con_course_fe/presentation/widgets/code_con_app_bar.dart';
 import 'package:code_con_course_fe/presentation/widgets/home_page_header.dart';
+import 'package:code_con_course_fe/presentation/widgets/speaker_section.dart';
+import 'package:code_con_course_fe/presentation/widgets/speaker_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -21,15 +24,22 @@ class HomePage extends StatelessWidget {
           ),
           ListView(
             children: const [
-              HomePageHeader(),
+              const HomePageHeader(),
               //Text('HomePageHeader'),
               sizedBoxHeight60,
-              BriefDescriptionSection(),
-              Text('SpeakerSection'),
-              Text('AgendaSection'),
+              const BriefDescriptionSection(),
+              //Text('SpeakerSection'),
+              // SpeakerWidget(
+              //     speaker: Speaker(
+              //         name: 'Jessamine Mumtaz',
+              //         title: 'CTO',
+              //         affiliation: 'Microsoft',
+              //         photoUrl: 'pngs/jessamine_mumtaz.png')),
+              SpeakerSection(),
+              const Text('AgendaSection'),
               sizedBoxHeight60,
-              Text('LinkSection'),
-              Text('FooterSection'),
+              const Text('LinkSection'),
+              const Text('FooterSection'),
             ],
           )
         ],
