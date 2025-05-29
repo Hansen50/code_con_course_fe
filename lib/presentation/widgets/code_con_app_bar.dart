@@ -1,6 +1,8 @@
+import 'package:code_con_course_fe/domain/entities/reservation.dart';
 import 'package:code_con_course_fe/presentation/constant.dart';
 import 'package:code_con_course_fe/presentation/extensions/build_context_extension.dart';
 import 'package:code_con_course_fe/presentation/providers/router_provider.dart';
+import 'package:code_con_course_fe/presentation/widgets/registration_status_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -46,7 +48,17 @@ class CodeConAppBar extends ConsumerWidget {
                       ),
                       SizedBoxWidth20,
                       InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          context.show(RegistrationStatusDialog(
+                            reservation: Reservation.fromJson({
+                              'Order ID': '123',
+                              'Email': 'hansen@gmail.com',
+                              'Name': 'Hansen',
+                              'Status': 'PAID',
+                              'Payment URL': 'https://www.google.com/?hl=id'
+                            }),
+                          ));
+                        },
                         child: Text(
                           'Contact',
                           style: TextStyle(color: Colors.white),
