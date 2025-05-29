@@ -1,4 +1,3 @@
-import 'package:code_con_course_fe/domain/entities/speaker.dart';
 import 'package:code_con_course_fe/presentation/constant.dart';
 import 'package:code_con_course_fe/presentation/widgets/agenda_section.dart';
 import 'package:code_con_course_fe/presentation/widgets/brief_description_section.dart';
@@ -7,7 +6,6 @@ import 'package:code_con_course_fe/presentation/widgets/footer_section.dart';
 import 'package:code_con_course_fe/presentation/widgets/home_page_header.dart';
 import 'package:code_con_course_fe/presentation/widgets/links_section.dart';
 import 'package:code_con_course_fe/presentation/widgets/speaker_section.dart';
-import 'package:code_con_course_fe/presentation/widgets/speaker_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {

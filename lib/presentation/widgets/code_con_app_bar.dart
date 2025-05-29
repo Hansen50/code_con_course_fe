@@ -1,13 +1,15 @@
 import 'package:code_con_course_fe/presentation/constant.dart';
 import 'package:code_con_course_fe/presentation/extensions/build_context_extension.dart';
+import 'package:code_con_course_fe/presentation/providers/router_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class CodeConAppBar extends StatelessWidget {
+class CodeConAppBar extends ConsumerWidget {
   const CodeConAppBar({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Container(
         color: primaryColor,
         child: SafeArea(
@@ -19,7 +21,9 @@ class CodeConAppBar extends StatelessWidget {
                 children: [
                   // Text('Code Con'),
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      ref.watch(routerProvider).goNamed('home');
+                    },
                     child: SizedBox(
                       height: 25,
                       width: 65,
@@ -32,7 +36,9 @@ class CodeConAppBar extends StatelessWidget {
                   Row(
                     children: [
                       InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          ref.watch(routerProvider).goNamed('register');
+                        },
                         child: const Text(
                           'Register',
                           style: TextStyle(color: Colors.white),

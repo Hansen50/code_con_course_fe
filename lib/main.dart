@@ -1,22 +1,31 @@
 import 'package:code_con_course_fe/presentation/constant.dart';
-import 'package:code_con_course_fe/presentation/pages/home_page.dart';
+import 'package:code_con_course_fe/presentation/providers/router_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'package:flutter_web_plugins/flutter_web_plugins.dart';
+
 void main() {
+  usePathUrlStrategy();
+
   runApp(const ProviderScope(child: const MainApp()));
 }
 
-class MainApp extends StatelessWidget {
+class MainApp extends ConsumerWidget {
   const MainApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        theme: ThemeData.from(
-            colorScheme: ColorScheme.fromSeed(seedColor: primaryColor),
-            textTheme: GoogleFonts.poppinsTextTheme()),
-        home: HomePage());
+  Widget build(BuildContext context, WidgetRef ref) {
+    return MaterialApp.router(
+      theme: ThemeData.from(
+          colorScheme: ColorScheme.fromSeed(seedColor: primaryColor),
+          textTheme: GoogleFonts.poppinsTextTheme()),
+      routeInformationParser: ref.watch(routerProvider).routeInformationParser,
+      routeInformationProvider:
+          ref.watch(routerProvider).routeInformationProvider,
+      routerDelegate: ref.watch(routerProvider).routerDelegate,
+      // home: HomePage()
+    );
   }
 }
