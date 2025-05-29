@@ -6,7 +6,7 @@ part of 'speaker_provider.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$speakerHash() => r'9de8b4e440206a183ecd29ba19af7754c52c9ad3';
+String _$speakerHash() => r'7a032017204f601c28e420f8631930d6f2186b6f';
 
 /// See also [speaker].
 @ProviderFor(speaker)

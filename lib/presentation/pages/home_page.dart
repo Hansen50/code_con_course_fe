@@ -1,5 +1,6 @@
 import 'package:code_con_course_fe/domain/entities/speaker.dart';
 import 'package:code_con_course_fe/presentation/constant.dart';
+import 'package:code_con_course_fe/presentation/widgets/agenda_section.dart';
 import 'package:code_con_course_fe/presentation/widgets/brief_description_section.dart';
 import 'package:code_con_course_fe/presentation/widgets/code_con_app_bar.dart';
 import 'package:code_con_course_fe/presentation/widgets/home_page_header.dart';
@@ -36,7 +37,8 @@ class HomePage extends StatelessWidget {
               //         affiliation: 'Microsoft',
               //         photoUrl: 'pngs/jessamine_mumtaz.png')),
               SpeakerSection(),
-              const Text('AgendaSection'),
+              //const Text('AgendaSection'),
+              AgendaSection(),
               sizedBoxHeight60,
               const Text('LinkSection'),
               const Text('FooterSection'),
