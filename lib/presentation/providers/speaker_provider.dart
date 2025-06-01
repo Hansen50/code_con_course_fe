@@ -9,30 +9,30 @@ List<Speaker> speaker(SpeakerRef ref) => [
           name: 'Koen Van Looveren',
           title: 'Senior Developer',
           affiliation: 'Google',
-          photoUrl: 'pngs/koen_van_looveren.png'),
+          photoUrl: 'assets/pngs/koen_van_looveren.png'),
       Speaker(
           name: 'Mary Cruz',
           title: 'Software Engineer',
           affiliation: 'Facebook',
-          photoUrl: 'pngs/mary_cruz.png'),
+          photoUrl: 'assets/pngs/mary_cruz.png'),
       Speaker(
           name: 'Lawrence Smith',
           title: 'Tech Lead',
           affiliation: 'Amazon',
-          photoUrl: 'pngs/lawrence_smith.png'),
+          photoUrl: 'assets/pngs/lawrence_smith.png'),
       Speaker(
           name: 'Jessamine Mumtaz',
           title: 'CTO',
           affiliation: 'Microsoft',
-          photoUrl: 'pngs/jessamine_mumtaz.png'),
+          photoUrl: 'assets/pngs/jessamine_mumtaz.png'),
       Speaker(
           name: 'Amir Khan',
           title: 'Software Developer',
           affiliation: 'Apple',
-          photoUrl: 'pngs/amir_khan.png'),
+          photoUrl: 'assets/pngs/amir_khan.png'),
       Speaker(
           name: 'Lynn Chang',
           title: 'Software Engineer',
           affiliation: 'Netflix',
-          photoUrl: 'pngs/lynn_chang.png'),
+          photoUrl: 'assets/pngs/lynn_chang.png'),
     ];

@@ -141,8 +141,9 @@ class _RegisterPageState extends ConsumerState<RegisterPage> {
                                           'RSV${DateTime.now().millisecondsSinceEpoch}',
                                       customerName: nameController.text,
                                       customerEmail: emailController.text,
-                                      returnUrl: '',
-                                      totalPayment: 75000);
+                                      returnUrl:
+                                          'https://code-con-website.web.app/return',
+                                      totalPayment: 750000);
 
                                   CodeConRepository()
                                       .createReservation(params: params)

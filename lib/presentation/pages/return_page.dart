@@ -28,7 +28,7 @@ class ReturnPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SvgPicture.asset(
-                  'svgs/codecon.svg',
+                  'assets/svgs/codecon.svg',
                   height: 50,
                 ),
                 sizedBoxHeight20,

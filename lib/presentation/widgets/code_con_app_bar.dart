@@ -28,7 +28,7 @@ class CodeConAppBar extends ConsumerWidget {
                       height: 25,
                       width: 65,
                       child: SvgPicture.asset(
-                        'svgs/codecon.svg',
+                        'assets/svgs/codecon.svg',
                         alignment: Alignment.centerLeft,
                       ),
                     ),

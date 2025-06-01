@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 enum Socmeds {
-  facebook('svgs/facebook.svg'),
-  instagram('svgs/instagram.svg'),
-  x('svgs/x.svg'),
-  threads('svgs/threads.svg'),
-  telegram('svgs/telegram.svg');
+  facebook('assets/svgs/facebook.svg'),
+  instagram('assets/svgs/instagram.svg'),
+  x('assets/svgs/x.svg'),
+  threads('assets/svgs/threads.svg'),
+  telegram('assets/svgs/telegram.svg');
 
   final String path;
 
