@@ -46,18 +46,24 @@ class CodeConAppBar extends ConsumerWidget {
                       ),
                       SizedBoxWidth20,
                       InkWell(
-                        onTap: () {
-                          // context.show(ErrorDialog(message: 'Error Testong'));
-                          // context.show(RegistrationStatusDialog(
-                          //   reservation: Reservation.fromJson({
-                          //     'Order ID': '123',
-                          //     'Email': 'hansen@gmail.com',
-                          //     'Name': 'Hansen',
-                          //     'Status': 'PAID',
-                          //     'Payment URL': 'https://www.google.com/?hl=id'
-                          //   }),
-                          // ));
-                        },
+                        onTap: () {},
+                        // ref
+                        //     .watch(routerProvider)
+                        //     .goNamed('return', queryParameters: {
+                        //   'merchantOrderId': '123',
+                        //   'resultCode': '00',
+                        //   'reference': '123',
+                        // });
+                        // context.show(ErrorDialog(message: 'Error Testong'));
+                        // context.show(RegistrationStatusDialog(
+                        //   reservation: Reservation.fromJson({
+                        //     'Order ID': '123',
+                        //     'Email': 'hansen@gmail.com',
+                        //     'Name': 'Hansen',
+                        //     'Status': 'PAID',
+                        //     'Payment URL': 'https://www.google.com/?hl=id'
+                        //   }),
+                        // ));
                         child: Text(
                           'Contact',
                           style: TextStyle(color: Colors.white),
